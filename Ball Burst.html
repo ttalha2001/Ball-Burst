@@ -1,0 +1,26 @@
+<style>
+	body {
+		margin: 0;
+		font-family: sans-serif;
+		background-color: black;
+	}
+</style>
+<div style="padding: 10px; position: absolute; color: white; font-size: 25px; font-style: bold; user-select: none;">
+	<span id="static" style="display: none">Score: <span id="score" style="display: none; margin-left: 10px">0</span></span>
+</div>
+<div id="gameOver" style="display: none; user-select: none; position: absolute; background-color: white; max-width: 500px; width: 100%; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
+	<h3 style="font-size: 15px; color: gray;">GAME OVER</h3>
+	<h3 style="font-size: 12px; color: gray; margin-top: 5px;">--better luck next time--</h3>
+	<h1 id="gameOverScore" style="font-size: 80px; color: darkblue; margin-bottom: 0; margin-top: 20;">0</h1>
+	<h3 style="font-size: 15px; margin-top: 0;">Points</h3>
+	<button id="restBtn" style="border: none; color: white; background-color: black; margin-bottom: 15px; border-radius: 10px; font-size: 25px; padding: 10px; margin-top: 5px; cursor: pointer;">Restart</button>
+</div>
+<div id="startGame" style="user-select: none; position: absolute; background-color: white; max-width: 500px; width: 100%; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
+	<h3 style="font-size: 40px; color: black; margin-bottom: 10px; margin-top: 15px">BALL BURST</h3>
+	<h3 style="font-size: 12px; color: black; margin-top: 0;">--good luck for your game--</h3>
+	<button id="startBtn" style="border: none; width: 100px; color: white; background-color: darkblue; margin-bottom: 15px; border-radius: 10px; font-size: 25px; padding: 10px; margin-top: 20px; cursor: pointer;">Start</button>
+	<h3 style="font-size: 10px; color: gray; margin-top: 5px;">by Talha Tahir</h3>
+</div>
+<canvas></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./index.js"></script>
